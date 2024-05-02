@@ -1,0 +1,60 @@
+# JQuery 
+
+## Installing JQuery
+Positioning the jquery tag is really important put it above the js src in html  
+`<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>`  
+`<script src="jqueryNotes.js"></script>`  
+
+## Syntax 
+**Query Selectors:**  
+`$("h1")`  
+
+**Manipulating Styles:**  
+`$("h1").css("color", "red");`  
+
+**Console Loging:**  
+`console.log($("h1").css("font-size"));`  
+
+**Adding and Removing Classes (Assuming that the class is already written in the CSS File):**  
+`$("h1").addClass("big-title margin-50");`  
+`$("h1").removeClass("big-title margin-50");`  
+
+**Checking If the Element Has a Class:**   
+`$("h1").hasClass("big-title");`  
+
+**Manipulating Text and InnerHTML:**
+`$("h1").text("Bye");`   
+`$("button").html("<em></em>");`
+
+**Manipulating Attributes**  
+`console.log($("img").attr("src"));`   
+**Syntax: .attr("get", "set")**   
+`$("a").attr("href", "https://www.yahoo.com");`   
+
+**Event Listener:**     
+`$("h1").click(function() {`     
+    `$("h1").css("color", "purple");`     
+`});`     
+**Looping Through Buttons:**    
+`$("button").click(function() {`      
+    `$("h1").css("color", "purple");`      
+`});`     
+**Keystrokes:**    
+`$("document").keypress(function(event) {`     
+`    console.log(event.key);`   
+`});`   
+**Project: Change H1's text according to the user key press**    
+`$("document").keypress(function(event) {`     
+`    $("h1").text(event.key);`   
+`});`   
+
+**We can simplify that even more using on (Find out more on the MDN Documentation)**   
+`$("h1").on("mouseover", function() {`     
+`    $("h1").css("color", "purple");`   
+`});`   
+
+**Look More into Chapter 157 and 158 on UDEMY**
+
+
+
+
